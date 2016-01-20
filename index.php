@@ -9,7 +9,7 @@
     <div id="video" data-id="1">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/DFyUCqQkN7Y" frameborder="0" allowfullscreen></iframe>
         <a href="#" class="like" name="bueno">
-            <img src="megusta.png" alt="Me gusta">Me gusta
+            <img src="megusta.png" alt="Me gusta">Me encanta
         </a>
         <a href="#" class="like" name="malo">
             <img src="nomegusta.png" alt="No me gusta"> No me gusta
