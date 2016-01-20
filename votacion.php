@@ -1,6 +1,6 @@
 <?php
 
-    // nos conectamos a la base de datos
+    // nos conectamos 
     $mysqli = new mysqli('localhost', 'root', '', 'votacion');
 
     // verificamos la conexión 
