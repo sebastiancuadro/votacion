@@ -29,6 +29,24 @@ $(document).ready(function()
         // evitamos el parpadeo de la página
         e.preventDefault();
     });
+
+    //limpiar la votacion
+    $(".clear").on("click", function(e) {
+
+       $.ajax({
+            type: "POST",
+            url: "votacion.php",
+            data: "clear=clear",
+            cache: true,
+            success: function(html) {
+
+                // si todo salió bien agregamos el resultado a la página
+                $("#contenido").html(html);
+        }});
+
+        // evitamos el parpadeo de la página
+        e.preventDefault();
+    });
 });
 
 // obtenemos los votos, sin hacer una votación 

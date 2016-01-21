@@ -9,6 +9,12 @@
         exit();
     }
 
+    //si se apreta el boton limpiar votacion
+    if(isset($_POST['clear'])){
+        $query = "UPDATE videos SET bueno = 0, malo = 0";
+        $mysqli->query($query);
+    }
+
     // si está seteada la variable nombre
     // es que se presionó alguno de los botones
     if(isset($_POST['nombre'])) {
@@ -49,8 +55,12 @@
             ?>
             <b><?php echo $total; ?></b>
             <div id="votos">
-                <div id="barraverde" style="width:<?php echo $buenoPorcentaje; ?>%"></div>
-                <div id="barraroja" style="width:<?php echo $maloPorcentaje; ?>%"></div>
+                <div id="barraverde" style="width:<?php echo $buenoPorcentaje; ?>%">
+                    <b><?php echo $buenoPorcentaje;?>%</b>
+                </div>
+                <div id="barraroja" style="width:<?php echo $maloPorcentaje; ?>%">
+                    <b><?php echo $maloPorcentaje;?>%</b>
+                </div>
             </div>
             <?php
         }

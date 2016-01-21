@@ -14,8 +14,12 @@
         <a href="#" class="like" name="malo">
             <img src="nomegusta.png" alt="No me gusta"> No me gusta
         </a>
+        <a href="#" class="clear" name="clear">
+            Limpiar Votacion
+        </a>
         <div id="contenido"></div>
     </div>
+    <div id="clear"></div>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="script.js"></script>
 </body>
